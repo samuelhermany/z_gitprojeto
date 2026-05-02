@@ -11,11 +11,28 @@ gh repo create z_gitprojeto --public --source=. --remote=origin --push
 
 gh repo create akn-solutions/z_gitprojeto --public --source=. --remote=origin --push
 
+# ver em qual branch estou
+
+git branch
+
 # Criar nova branch
 
 git checkout -b nome-da-branch
 git checkout -b teste
 
-# ver em qual branch estou
+# subir nova branch para o github
 
-git branch
+git push -u origin nome_branch
+
+# branch-criar pul request
+
+gh pr create
+
+# branch - atualizar a main
+
+gh pr merge
+
+# atualizar a main local
+
+git checkout main
+git pull
